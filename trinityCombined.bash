@@ -13,8 +13,12 @@
 
 module load bio
 module load bio/trinity/2.8.4
+module load bio/salmon/0.11.2
+module load bio/jellyfish/2.2.10
+module load bio/python/2.7.14
 
 
-Trinity --seqType fq --max_memory 50G --left combined_F.fq --right combined_R.fq --CPU 6
+Trinity --seqType fq --max_memory 50G --left combined_F.fq --right combined_R.fq --CPU 6 --output combinedTrinity_out
+
 
 
